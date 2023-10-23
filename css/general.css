@@ -1,0 +1,36 @@
+/* Color Pallete
+#4C5FD5
+#dadbf1
+#000000
+#fff
+#191a1b
+*/
+
+/* Typography Scheme
+font sizes(px) = 20 / 24 / 30 / 74
+*/
+
+/* Spacing Scheme
+(px) = 10 / 22 / 28 / 90 
+*/
+
+@font-face {
+    font-family: "GT America Standard";
+    src: url(../font/fontawesome-webfont.woff2);
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+    font-weight: 400;
+}
+
+body{
+    font-family: "GT America Standard", sans-serif;
+    color: #191a1b;
+}
