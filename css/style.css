@@ -21,6 +21,10 @@
     height: 3.2rem;
 }
 
+.link-heading {
+    text-decoration: none;
+}
+
 .verticalLine{
     color: #fff;
     font-size: 3rem;
@@ -32,6 +36,7 @@
     color: #fff;
     font-size: 2.4rem;
     font-weight: 400;
+    text-decoration: none;
 }
 
 .nav-list{
@@ -54,7 +59,12 @@
     text-decoration: none;
 }
 
-.button--black{
+.button:focus {
+    outline: none;
+}
+
+.button--black,
+.button--black:focus{
     color: #fff;
     background-color: #111;
 }
@@ -68,7 +78,8 @@
 }
 
 .button--blue:hover,
-.button-blue:active{
+.button--blue:active,
+.button--blue:focus{
     color: #000000;
     background-color: #fff;
     border-color: currentColor;
