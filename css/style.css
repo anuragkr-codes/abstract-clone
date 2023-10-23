@@ -9,6 +9,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 200rem;
+    margin: auto;
 }
 
 .logo{
@@ -140,12 +142,12 @@
 
 /* FEATURES SECION */
 .section-features{
-    padding: 12rem 0 0 0;
-    margin-bottom: 10rem;
+    padding: 16rem 0 14rem 0;
 }
 
 .section-features--inner{
-    max-width: 114rem;
+    max-width: 180rem;
+    padding: 0 14rem;
     margin: auto;
 }
 
@@ -206,6 +208,8 @@
 .footer-inner {
     padding: 5.6rem 9rem;
     height: 100%;
+    max-width: 200rem;
+    margin: auto;
 }
 
 .footer-container {
@@ -219,6 +223,7 @@
 
 .footer-content-box--copyright {
     align-self: end;
+    justify-self: end;
 }
 
 .footer-content-heading {
