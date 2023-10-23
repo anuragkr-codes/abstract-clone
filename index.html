@@ -6,6 +6,7 @@
     <link rel="icon" href="img/favicon-32x32.png" />
     <link rel="stylesheet" href="css/general.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/queries.css" />
     <title>Abstract</title>
   </head>
   <body>
@@ -25,27 +26,35 @@
           >
         </div>
         <div class="action">
-          <ul class="nav-list">
-            <li>
-              <a class="button button--black" href="#">Submit a request</a>
-            </li>
-            <li><a class="button button--blue" href="#">Sign in</a></li>
-          </ul>
+          <div class="mobile-nav-box">
+            <ion-icon class="mobile-nav-icon" name="search-outline"></ion-icon>
+            <ion-icon class="mobile-nav-icon" name="menu-outline"></ion-icon>
+          </div>
+          <div class="nav-list-box">
+            <ul class="nav-list">
+              <li>
+                <a class="button button--black" href="#">Submit a request</a>
+              </li>
+              <li><a class="button button--blue" href="#">Sign in</a></li>
+            </ul>
+          </div>
         </div>
       </nav>
     </header>
     <main>
       <section class="hero">
-        <div><span class="hero-title">How can we help?</span></div>
-        <div class="hero-search-box-container">
-          <input
-            type="text"
-            class="hero-search-box"
-            placeholder="Search"
-          /><ion-icon
-            class="search-arrow"
-            name="arrow-forward-outline"
-          ></ion-icon>
+        <div class="hero-inner">
+          <div><span class="hero-title">How can we help?</span></div>
+          <div class="hero-search-box-container">
+            <input
+              type="text"
+              class="hero-search-box"
+              placeholder="Search"
+            /><ion-icon
+              class="search-arrow"
+              name="arrow-forward-outline"
+            ></ion-icon>
+          </div>
         </div>
       </section>
       <section class="section-features">
@@ -171,7 +180,7 @@
       <footer class="footer">
         <div class="footer-inner">
           <div class="footer-container">
-            <div class="footer-content-box">
+            <div class="footer-content-box footer-container-box--1">
               <h4 class="footer-content-heading">Abstract</h4>
               <ul class="footer-content-list">
                 <li>Start Trial</li>
@@ -179,7 +188,7 @@
                 <li>Download</li>
               </ul>
             </div>
-            <div class="footer-content-box">
+            <div class="footer-content-box footer-container-box--2">
               <h4 class="footer-content-heading">Resources</h4>
               <ul class="footer-content-list">
                 <li>Blog</li>
@@ -188,7 +197,7 @@
                 <li>Status</li>
               </ul>
             </div>
-            <div class="footer-content-box">
+            <div class="footer-content-box footer-container-box--3">
               <h4 class="footer-content-heading">Community</h4>
               <ul class="footer-content-list">
                 <li>Twitter</li>
@@ -198,7 +207,7 @@
                 <li>Podcast</li>
               </ul>
             </div>
-            <div class="footer-content-box">
+            <div class="footer-content-box footer-container-box--4">
               <h4 class="footer-content-heading">Company</h4>
               <ul class="footer-content-list footer-content-list--company">
                 <li>About Us</li>

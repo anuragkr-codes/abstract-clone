@@ -1,0 +1,120 @@
+/* rem and em do NOT depend on html font-size in media queries!  Instead, 1rem = 1em = 16px */
+
+/* ******************************* */
+/* BELOW 1440px (smaller desktops) */
+/* ******************************* */
+
+@media (max-width: 90em){
+    /* Adjust footer */
+    .footer-container{
+        grid-template-columns: 1fr 1fr 1fr 1fr 5fr;
+        column-gap: 6rem;
+    }
+}
+
+/* ******************************* */
+/* BELOW 1200px (Landscape tablets) */
+/* ******************************* */
+@media (max-width: 75em){
+    /* Implement hamburger menu */
+    .nav-list-box{
+        display: none;
+        visibility: hidden; /*to hide it from screen readers*/
+    }
+    .mobile-nav-box{
+        display: block;
+    }
+    .section-features--inner{
+        padding: 0 10rem;
+    }
+}
+
+/* ******************************* */
+/* BELOW 960px (Tablets) */
+/* ******************************* */
+@media (max-width: 60em){
+    .footer{
+        height: auto;
+    }
+    .footer-container{
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .footer-content-box--copyright{
+        grid-column: 2 / 3;
+    }
+
+    .feature-card-icon--img{
+        height: 8rem;
+    }
+
+    .main-nav{
+        padding: 2.6rem 6rem;
+    }
+}
+
+/* ******************************* */
+/* BELOW 770px (Smaller tablets) */
+/* ******************************* */
+@media (max-width: 48em){
+    /* Stretch header */
+    .main-nav{
+        padding: 2.6rem 2rem;
+    }
+
+    /* Adjust hero section */
+    .hero-title{
+        font-size: 6.2rem;
+        letter-spacing: -1px;
+    }
+
+    .hero-inner{
+        padding: 0 3rem;
+    }
+
+    /* Features grid -> 1 col layout */
+    .section-features{
+        padding-top: 12rem;
+    }
+    .section-features--inner{
+        padding: 0 8rem;
+    }
+    .container-features{
+        grid-template-columns: 1fr;
+    }
+
+    /* Update footer grid layout */
+    .footer-inner{
+        padding: 5.6rem 2rem;
+    }
+    .footer-container{
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: 1fr 1fr;
+        column-gap: 2rem;
+    }
+
+    .footer-content-box--copyright{
+        grid-column: 3 / 5; 
+        grid-row: 2 / 3;
+        margin-top: 10rem;
+    }
+
+    .footer-container-box--1{
+        grid-column: 1 / 2; 
+        grid-row: 1 / 2;
+    }
+
+    .footer-container-box--2{
+        grid-column: 2 / 3; 
+        grid-row: 1 / 2;
+    }
+    .footer-container-box--3{
+        grid-column: 1 / 2;
+        grid-row: 2 / 3;
+    }
+    .footer-container-box--4{
+        grid-column: 2 / 3; 
+        grid-row: 2 / 3;
+    }
+}
