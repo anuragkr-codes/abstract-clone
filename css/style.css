@@ -103,11 +103,10 @@
 /* HERO SECTION */
 .hero {
   background-color: #dadbf1;
-  height: 42rem;
+  padding: 11.2rem 0;
 }
 
 .hero-inner {
-  height: 100%;
   max-width: 92rem;
   margin: auto;
   padding: 0 6rem;
@@ -116,18 +115,19 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2rem;
+  gap: 2.4rem;
 }
 
 .hero-title {
-  font-size: 7.4rem;
+  font-size: 7.8rem;
+  font-weight: 500;
   letter-spacing: -1px;
-  width: 76rem;
 }
 
 .hero-search-box-container {
   position: relative;
-  width: 100%;
+  align-self: stretch;
+  padding: 0 2rem;
 }
 
 .hero-search-box {
@@ -150,7 +150,7 @@
   font-size: 3rem;
   position: absolute;
   top: 2.25rem;
-  right: 1.5rem;
+  right: 2.4rem;
   color: #333;
 }
 
@@ -225,14 +225,11 @@
   width: 100%;
 }
 
-.footer-inner {
+.footer-container {
   padding: 5.6rem 9rem;
   height: 100%;
   max-width: 200rem;
   margin: auto;
-}
-
-.footer-container {
   color: #fff;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 2fr;
